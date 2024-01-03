@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Itim;
+}
+
+header {
+    position: fixed;
+    background-color: #1c796c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* สารบัญ */
+ul {
+    display: flex;
+    position: fixed;
+    font-size: 100%;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px;
+    list-style: none;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 10px;
+}
+ul li a:hover {
+    color: rgb(1, 1, 1);
+    background-color: #000000;
+    padding: 10px;
+}
+
+.index-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+}
+
+.index-bar .munu li a{
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    background: #000000;
+}
+
+.index-bar .munu li a:hover{
+    color: #C4DBD9;
+    background: #000000;
+}
+.index-bar.sticky .munu li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.index-bar,
+.index-bar.index-bar-links {
+  display: flex;
+  align-items: center;
+}
+
+.index {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* หัวข้อ */
+.topic div{
+    padding: 20px;
+    color: black;
+    text-align: center;
+    
+}
+
+.name ul {
+    background-color: #ffffff;
+    list-style-type: circle;
+    position: static;
+    display: block;
+}
+
+/* ประวัติส่วนตัว */
+.Profile {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr ;
+    padding: 20px;
+    
+}
+
+.picture {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    
+}
+
+.topic {
+    text-align: center;
+    font-size: 100%;
+    background-color: #1c796c;
+    color: #ffffff;
+}
+.name {
+    text-align: left;
+}
+
+.KU {
+    text-align: left;
+}
+
+.B.Eng {
+    text-align: left;
+}
+
+@media screen and (min-width: 860px) {
+    .Profile {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .Profile {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* ประวัติการศึกษา */
+.title-Education {
+    padding: 20px;
+    background-color: #C4DBD9;
+    text-align: center;
+}
+
+.jta-item {
+    background-color: #1c796c;
+    border-radius: 20px;
+}
+
+.jta-logo {
+    width: 80%;
+    height: 20%;
+    border-radius: 10px;
+}
+
+.cpw-item {
+    background-color: #1c796c;
+    border-radius: 20px;
+}
+
+.cpw-logo {
+    width: 80%;
+    height: 40%;
+    border-radius: 10px;
+}
+
+.dsn-item {
+    background-color: #1c796c;
+    border-radius: 20px;
+}
+
+.dsn-logo {
+    width: 80%;
+    height: 20%;
+    border-radius: 10px;
+}
+
+
+.Education {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    background-color: #C4DBD9;
+}
+
+.Education div {
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 650px) {
+    .Education {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .Education {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* เงื่อนไขการเข้าศึกษาต่อ */
+Condition {
+    text-align: center;
+}
+Condition div{
+    padding: 20px;
+    align-items: center;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th  {
+    border: 2px solid black;
+    background-color: #1c796c;
+    border-collapse: collapse;
+    padding: 0.5%;
+    text-align: center;
+}
+
+td {
+    border: 2px solid black;
+    /* ใส่กรอบตาราง 2px ห้ามเว้นวรรค */
+    background-color: #C4DBD9;
+    border-collapse: collapse;
+    /* ลงสีกรอบตารางว่าเว้นขาว หรือเติมเต็มช่องสีเหลี่ยม */
+    padding: 0.5%;
+    text-align: left;
+}
+
+/* กิจกรรม */
+.title-Activities {
+    background-color: #1c796c;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 25%;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: #ffffff;
+}
+
+.Activities {
+    padding: 20px;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: #C4DBD9;
+    border: 2px solid #000000;
+}
+  
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: Itim;
+}
+  
+  
+.tab button:hover {
+    background-color: #000000;
+    color:#ffffff;
+    
+}
+  
+  
+.tab button.active {
+    background-color: #1c796c;
+}
+  
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ffffff;
+    border-top: none;
+    overflow: auto;
+    border: 2px solid #000000;
+    border-top: none;
+    padding: 20px;
+}
+
+.act-logo {
+    border-radius: 10%;
+    width: 30%;
+    float: right;
+}
+  
+.active-logo{
+    border-radius: 10%;
+    width: 30%;
+    float: right;
+}
+
+.activity-logo{
+    border-radius: 10%;
+    width: 30%;
+    float: right;
+}
+
+.actable-logo{
+    border-radius: 10%;
+    width: 30%;
+    float: right;  
+}
+
+/* เกียรติบัตร */
+.title-Certificates {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 25%;
+    text-align: center;
+    background-color: #C4DBD9;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.math-item {
+    background-color: #C4DBD9;
+    border-radius: 20px;
+}
+
+.math-logo {
+    width: 90%;
+    
+    border-radius: 10px;
+}
+
+.eng-item {
+    background-color: #C4DBD9;
+    border-radius: 20px;
+}
+
+.eng-logo {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.english-item {
+    background-color: #C4DBD9;
+    border-radius: 20px;
+}
+
+.enhlish-logo {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.phy-item {
+    background-color: #C4DBD9;
+    border-radius: 20px;
+}
+
+.phy-logo {
+    width: 90%;
+    border-radius: 10px;
+}
+
+
+.Certificates {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+.Certificates div {
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 560px) {
+    .Certificates {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .Certificates {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* ผลงาน */
+.Performance {
+    background-color: #C4DBD9;
+    height: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.Performance-data {
+    display: flex;
+    height: 50%;
+    align-items: center ;
+}
+
+.Performance-detail{
+    flex-basis: 50%;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 20px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.card1 {
+    background-image: url(https://scontent.fbkk6-2.fna.fbcdn.net/v/t1.15752-9/410917009_215109261651852_1112120108226499594_n.png?_nc_cat=109&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHkqqKZuS-fkE3Z-L859SQkL-GQ2MAcZrcv4ZDYwBxmtw7VKkJxVewNELg2xlYGjlRNCoG5hNhTMIB_6BAv8nCQ&_nc_ohc=F6ocAp5ToiMAX8O_CYe&_nc_ht=scontent.fbkk6-2.fna&oh=03_AdT5MWssMXmpTgHwJamu6sk26cLN7hZCejwJgdBX1JeU1w&oe=65BA1627);
+}
+
+.card2 {
+    background-image: url(https://scontent.fbkk7-3.fna.fbcdn.net/v/t1.15752-9/411134518_1580589599423904_632534850498704015_n.png?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=sSlo7FNTvukAX9KSjxk&_nc_ht=scontent.fbkk7-3.fna&oh=03_AdSRgoH2Sr4c8EWiYUMiKO4UZ12HE9PqQnU1aMnIIVvSmQ&oe=65BC64CF);
+}
+
+.card3 {
+    background-image: url(https://scontent.fbkk7-3.fna.fbcdn.net/v/t1.15752-9/413953604_362867773034214_6711174862285658303_n.png?_nc_cat=101&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=9idFTRBiCMQAX_novB-&_nc_ht=scontent.fbkk7-3.fna&oh=03_AdSnaKZDUy2nfCnK9hNv5j1f5O9K9Lf2dh4GySaACmO8pg&oe=65BC55E2);
+}
+
+.card4 {
+    background-image: url(https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.15752-9/413428903_730561352466341_2153239592345552890_n.png?_nc_cat=104&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=ab-nPqFtGToAX-i_lAK&_nc_oc=AQmPhffntrHx57Xyzru--Svt7uFeYJL66O18osiwNQvw1rExWQcgw_2vvUChHSYbUog&_nc_ht=scontent.fbkk7-2.fna&oh=03_AdTYLcmEAriuMe2XZep4xxaiasVm_VM-GIK5hDs5chS42Q&oe=65BC7599);
+}
+
+
