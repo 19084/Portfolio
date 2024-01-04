@@ -435,6 +435,12 @@ td {
     text-align: center;
 }
 
+@media screen and (max-width: 400px) {
+    .card {
+        height: 50%;
+        width: 50%;
+    }
+}
 
 .card1 {
     background-image: url(https://scontent.fbkk6-2.fna.fbcdn.net/v/t1.15752-9/410917009_215109261651852_1112120108226499594_n.png?_nc_cat=109&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeHkqqKZuS-fkE3Z-L859SQkL-GQ2MAcZrcv4ZDYwBxmtw7VKkJxVewNELg2xlYGjlRNCoG5hNhTMIB_6BAv8nCQ&_nc_ohc=F6ocAp5ToiMAX8O_CYe&_nc_ht=scontent.fbkk6-2.fna&oh=03_AdT5MWssMXmpTgHwJamu6sk26cLN7hZCejwJgdBX1JeU1w&oe=65BA1627);
